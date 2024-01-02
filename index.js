@@ -56,6 +56,7 @@ import { countUniqueValues, countUniqueValuesRefactor } from './countUniqueValue
 // measureExecutionTime(countUniqueValues, [1,1,1,1,1,2,5,6,7,8,9,11,12,13,14,15,19,23,29,40,506]); 
 // measureExecutionTime(countUniqueValuesRefactor, [1,1,1,1,1,2,5,6,7,8,9,11,12,13,14,15,19,23,29,40,506]); 
 
-import { maxSubArraySum } from './maxSubArraySum.js';
+import { maxSubArraySum, maxSubArraySumRefactor } from './maxSubArraySum.js';
 
 measureExecutionTime(maxSubArraySum, [1,2,5,2,8,1,5], 2); 
+measureExecutionTime(maxSubArraySumRefactor, [1,2,5,2,8,1,5], 2); 
