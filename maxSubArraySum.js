@@ -10,12 +10,35 @@ maxSubArraySum([], 4) // null
 */
 
 export function maxSubArraySum(arr, num) {
-    let i = 0;
+    if (arr.length < num) return null;
 
-    for (i; i < arr.length; i++) {
-        console.log('i', i, arr[i])
+    let max = -Infinity;
+
+    for (let i = 0; i < arr.length - num + 1; i++) {
+        console.log(`---------------------- ${i} loop i ----------------------------`)
+        console.log('')
+        console.log('i =', i, `; arr[i] = ${arr[i]}`)
+        console.log('')
+        
+        let temp = 0;
         for (let j = 0; j < num; j++) {
-            console.log('j', j, arr[j])
+            console.log(`---------- ${j} loop j where arr[i] = ${arr[i]}  -------------`)
+            console.log('')
+            console.log('j = ', j, '; arr[i + j] =', arr[i + j]);
+            temp += arr[i + j];
+            console.log('adding arr[i + j] i.e.',arr[i + j], 'to temp', '..temp is now', temp)
+
+            if (temp > max) {
+                max = temp;
+            }
+
+            console.log('')
+            console.log('max is currently', max);
+            console.log('')
         }
     }
+
+    console.log('max', max)
+    return max;
 }
+
