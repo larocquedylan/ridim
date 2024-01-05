@@ -1,6 +1,12 @@
 import { measureExecutionTime } from './measureExecution.js';
-import { addUpTo, addUpToN } from './addUpToN.js';
-import  { arrReverded, arrUnshiftLoop, splitReverseJoin, whileReverse, whileReverse1, loopReverse } from './reverseString.js';
+// import { addUpTo, addUpToN } from './addUpToN.js';
+// import  { arrReverded, arrUnshiftLoop, splitReverseJoin, whileReverse, whileReverse1, loopReverse } from './reverseString.js';
+// import { same, sameRefactor } from './same.js';
+// import { anagram, anagramRefactor } from './anagram.js';
+// import { sumZero } from './sumZero.js';
+// import { countUniqueValues, countUniqueValuesRefactor } from './countUniqueValues.js';
+// import { maxSubArraySum, maxSubArraySumRefactor } from './maxSubArraySum.js';
+import { sumWithRecursion, sumWithIteration } from './sumWithRecursion.js'
 
 // measureExecutionTime(addUpTo, 1000000000000000);
 // measureExecutionTime(addUpToN, 1000000000000000);
@@ -20,7 +26,6 @@ import  { arrReverded, arrUnshiftLoop, splitReverseJoin, whileReverse, whileReve
 // measureExecutionTime(loopReverse, 'cat');
 
 
-import { same, sameRefactor } from './same.js';
 
 // measureExecutionTime(same, [1,2,3], [1,4,9]);
 // measureExecutionTime(sameRefactor, [1,2,3], [1,4,9]);
@@ -33,20 +38,17 @@ import { same, sameRefactor } from './same.js';
 // measureExecutionTime(sameRefactor, a, b);
 
 
-import { anagram, anagramRefactor } from './anagram.js';
 
 // measureExecutionTime(anagram, 'Supercalifragilisticexpialidocious', 'suoicodilaipxecitsiligarfilacrepus');
 // measureExecutionTime(anagramRefactor, 'Supercalifragilisticexpialidocious', 'suoicodilaipxecitsiligarfilacrepus');
 
 // console.log(anagram('anagram', 'nagaram'));
 
-import { sumZero } from './sumZero.js';
 
 // measureExecutionTime(sumZero, [-4,-3,-2,-1,0,1,2,5]); // should return [ -2, 2]
 // measureExecutionTime(sumZero, [-4,-3,-2,-1,0,1,10,5]); // should return [ -1, 1]
 // measureExecutionTime(sumZero, [-4,-3,-2,-1,0,10,5]); // should return undefined
 
-import { countUniqueValues, countUniqueValuesRefactor } from './countUniqueValues.js';
 
 // countUniqueValues([1,1,1,1,1,2]); // 2
 
@@ -56,7 +58,11 @@ import { countUniqueValues, countUniqueValuesRefactor } from './countUniqueValue
 // measureExecutionTime(countUniqueValues, [1,1,1,1,1,2,5,6,7,8,9,11,12,13,14,15,19,23,29,40,506]); 
 // measureExecutionTime(countUniqueValuesRefactor, [1,1,1,1,1,2,5,6,7,8,9,11,12,13,14,15,19,23,29,40,506]); 
 
-import { maxSubArraySum, maxSubArraySumRefactor } from './maxSubArraySum.js';
 
-measureExecutionTime(maxSubArraySum, [1,2,5,2,8,1,5], 2); 
-measureExecutionTime(maxSubArraySumRefactor, [1,2,5,2,8,1,5], 2); 
+
+// measureExecutionTime(maxSubArraySum, [1,2,5,2,8,1,5], 2); 
+// measureExecutionTime(maxSubArraySumRefactor, [1,2,5,2,8,1,5], 2); 
+
+
+measureExecutionTime(sumWithRecursion, 5);
+measureExecutionTime(sumWithIteration, 5);
