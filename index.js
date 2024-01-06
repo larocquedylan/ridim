@@ -81,4 +81,10 @@ import { power } from './power.js'
 // measureExecutionTime(collectAllOdds, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
 // measureExecutionTime(collectAllOddsSlice, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
 
-measureExecutionTime(power, (2,20))
+// measureExecutionTime(power, (2,20))
+
+import { productOfArray } from './productOfArray.js';
+
+let x  = measureExecutionTime(productOfArray, [1,2,3, 4, 100])
+console.log(x)
+
