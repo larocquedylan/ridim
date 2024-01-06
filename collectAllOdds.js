@@ -1,9 +1,10 @@
 /*
+
 write a function using recursion that collects all of the odd numbers in a array.
 
 ---
 
-*helper recursive*
+*helper method recursion*
 
 Notes:
 - need to define a variable outside of the recursive closure scope so result isn't reset each time the recursion is called
@@ -12,8 +13,13 @@ Notes:
 - the second function create a new array each recursion (due to the slice).
 - when I measure the execution time, the second is significantly faster... Node engine could be optimizing the slice op?
 
+*pure recursion*
+
+Notes: 
+
 */
 
+// helper recursion
 export function collectAllOdds(arr){
     // establish an array to push to
     let odd = [];
@@ -42,6 +48,7 @@ export function collectAllOdds(arr){
     return odd
 }
 
+// helper recursion
 export function collectAllOddsSlice(arr){
     // establish an array to push to
     let odd = [];
@@ -70,3 +77,21 @@ export function collectAllOddsSlice(arr){
 }
 
 
+// pure recursion
+export function collectOddValues(arr){
+    // create array
+    let newArr = [];
+
+    // establish base case
+    if (arr.length === 0) return newArr
+
+    if (arr[0] % 2 !== 0){
+        newArr.push(arr[0])
+    }
+
+    // what are the different inputs?
+    newArr = newArr.concat(collectOddValues(arr.slice(1)))
+
+    // return the function itself
+    return newArr
+}

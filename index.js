@@ -79,3 +79,4 @@ import { collectAllOdds, collectAllOddsSlice } from './collectAllOdds.js'
 
 measureExecutionTime(collectAllOdds, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
 measureExecutionTime(collectAllOddsSlice, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
+
