@@ -8,6 +8,8 @@ import { measureExecutionTime } from './measureExecution.js';
 // import { maxSubArraySum, maxSubArraySumRefactor } from './maxSubArraySum.js';
 // import { sumWithRecursion, sumWithIteration } from './sumWithRecursion.js'
 // import { factorial, factorialLoop } from './factorial.js';
+// import { collectAllOdds, collectAllOddsSlice } from './collectAllOdds.js'
+import { power } from './power.js'
 
 // measureExecutionTime(addUpTo, 1000000000000000);
 // measureExecutionTime(addUpToN, 1000000000000000);
@@ -75,8 +77,8 @@ import { measureExecutionTime } from './measureExecution.js';
 // console.log(a)
 // console.log(b)
 
-import { collectAllOdds, collectAllOddsSlice } from './collectAllOdds.js'
 
-measureExecutionTime(collectAllOdds, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
-measureExecutionTime(collectAllOddsSlice, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
+// measureExecutionTime(collectAllOdds, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
+// measureExecutionTime(collectAllOddsSlice, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
 
+measureExecutionTime(power, (2,20))
