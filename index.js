@@ -7,7 +7,7 @@ import { measureExecutionTime } from './measureExecution.js';
 // import { countUniqueValues, countUniqueValuesRefactor } from './countUniqueValues.js';
 // import { maxSubArraySum, maxSubArraySumRefactor } from './maxSubArraySum.js';
 // import { sumWithRecursion, sumWithIteration } from './sumWithRecursion.js'
-import { factorial, factorialLoop } from './factorial.js';
+// import { factorial, factorialLoop } from './factorial.js';
 
 // measureExecutionTime(addUpTo, 1000000000000000);
 // measureExecutionTime(addUpToN, 1000000000000000);
@@ -69,8 +69,13 @@ import { factorial, factorialLoop } from './factorial.js';
 // measureExecutionTime(sumWithIteration, 5);
 
 
-let a = measureExecutionTime(factorial, 5);
-let b = measureExecutionTime(factorialLoop, 5);
+// let a = measureExecutionTime(factorial, 5);
+// let b = measureExecutionTime(factorialLoop, 5);
 
-console.log(a)
-console.log(b)
+// console.log(a)
+// console.log(b)
+
+import { collectAllOdds, collectAllOddsSlice } from './collectAllOdds.js'
+
+measureExecutionTime(collectAllOdds, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
+measureExecutionTime(collectAllOddsSlice, [1,2,3,4,5,6,7,8,9,0,22,324,232,333])
