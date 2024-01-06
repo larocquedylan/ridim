@@ -3,12 +3,14 @@ write a function using recursion that collects all of the odd numbers in a array
 
 ---
 
-Notes:
+*helper recursive*
 
+Notes:
+- need to define a variable outside of the recursive closure scope so result isn't reset each time the recursion is called
 - both functions have a time complexity of o(n) as they only iterate through the array one time. 
 - the first collect is more space efficient as it doesn't create a new array.
 - the second function create a new array each recursion (due to the slice).
-- when I measure the execution time of the, the second is significantly faster... Node engine could be optimizing the slice op?
+- when I measure the execution time, the second is significantly faster... Node engine could be optimizing the slice op?
 
 */
 
