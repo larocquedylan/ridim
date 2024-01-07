@@ -83,8 +83,13 @@ import { power } from './power.js'
 
 // measureExecutionTime(power, (2,20))
 
-import { productOfArray } from './productOfArray.js';
+// import { productOfArray } from './productOfArray.js';
 
-let x  = measureExecutionTime(productOfArray, [1,2,3, 4, 100])
-console.log(x)
+// let x  = measureExecutionTime(productOfArray, [1,2,3, 4, 100])
+// console.log(x)
+
+import { fib, fibonnaci } from './fibonacci.js'
+
+let x = measureExecutionTime(fib, 50);
+let y = measureExecutionTime(fibonnaci, 50);
 
