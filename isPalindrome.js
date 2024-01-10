@@ -33,7 +33,7 @@ export function isPalindrome(string){
 }
 
 
-export function check(str){
+export function teejSol(str){
     if (str.length <= 1) return true;
 
     if (str[0] === str[str.length -1]){
@@ -41,15 +41,4 @@ export function check(str){
     } else return false;
 }
 
-// let x = check('lol')
-// console.log(x)
 
-export function lol(str){
-    let string = str.split('').reverse().join('');
-
-    if (string === str) return true;
-    else return false;
-}
-
-// console.log(x[x.length-1])
-// console.log(x[0])

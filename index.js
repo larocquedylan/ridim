@@ -99,11 +99,11 @@ import { power } from './power.js'
 
 // console.log(a)
 
-import {check, lol, isPalindrome} from './isPalindrone.js'
+import {isPalindrome, teejSol} from './isPalindrome.js'
 
 const thousandAs = 'a'.repeat(100000000);
 
-let a = measureExecutionTime(check, thousandAs);
+let a = measureExecutionTime(teejSol, thousandAs);
 //let b = measureExecutionTime(isPalindrome, thousandAs);
 
 
