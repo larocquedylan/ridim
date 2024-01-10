@@ -93,8 +93,18 @@ import { power } from './power.js'
 // let x = measureExecutionTime(fib, 50);
 // let y = measureExecutionTime(fibonnaci, 50);
 
-import { reverse } from './reverseStringRecursion.js';
+// import { reverse } from './reverseStringRecursion.js';
 
-let a = measureExecutionTime(reverse, 'string');
+// let a = measureExecutionTime(reverse, 'string');
 
-console.log(a)
+// console.log(a)
+
+import {check, lol, isPalindrome} from './isPalindrone.js'
+
+const thousandAs = 'a'.repeat(100000000);
+
+let a = measureExecutionTime(check, thousandAs);
+//let b = measureExecutionTime(isPalindrome, thousandAs);
+
+
+
