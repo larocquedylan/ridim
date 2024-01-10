@@ -88,8 +88,13 @@ import { power } from './power.js'
 // let x  = measureExecutionTime(productOfArray, [1,2,3, 4, 100])
 // console.log(x)
 
-import { fib, fibonnaci } from './fibonacci.js'
+// import { fib, fibonnaci } from './fibonacci.js'
 
-let x = measureExecutionTime(fib, 50);
-let y = measureExecutionTime(fibonnaci, 50);
+// let x = measureExecutionTime(fib, 50);
+// let y = measureExecutionTime(fibonnaci, 50);
 
+import { reverse } from './reverseStringRecursion.js';
+
+let a = measureExecutionTime(reverse, 'string');
+
+console.log(a)
