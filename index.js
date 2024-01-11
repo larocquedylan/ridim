@@ -101,10 +101,17 @@ import { power } from './power.js'
 
 import {isPalindrome, teejSol} from './isPalindrome.js'
 
-const thousandAs = 'a'.repeat(100000000);
+// const thousandAs = 'a'.repeat(100000000);
 
-let a = measureExecutionTime(teejSol, thousandAs);
+// let a = measureExecutionTime(teejSol, thousandAs);
 //let b = measureExecutionTime(isPalindrome, thousandAs);
 
 
 
+import { linearSearch, linear } from './linearSearch.js';
+
+let a = measureExecutionTime(linearSearch, [1,2,3,4,5,6,7,8,9,10], 11);
+let b = measureExecutionTime(linear, [1,2,3,4,5,6,7,8,9,10], 11);
+
+console.log(a)
+console.log(b)
