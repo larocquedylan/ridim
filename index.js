@@ -113,8 +113,14 @@ import { linearSearch, linear, states } from './linearSearch.js';
 // let a = measureExecutionTime(linearSearch, [1,2,3,4,5,6,7,8,9,10], 11);
 // let b = measureExecutionTime(linear, [1,2,3,4,5,6,7,8,9,10], 11);
 
-let c = measureExecutionTime(linearSearch, states, 'Arizona');
-let d = measureExecutionTime(linear, states, 'Arizona');
+// let c = measureExecutionTime(linearSearch, states, 'Arizona');
+// let d = measureExecutionTime(linear, states, 'Arizona');
 
-console.log(c)
-console.log(d)
+// console.log(c)
+// console.log(d)
+
+import { binarySearch } from './binarySearch.js';
+
+let a = measureExecutionTime(binarySearch,[1,2,3,4,5,6,7,8,9,10], 11)
+
+console.log(a)
