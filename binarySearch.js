@@ -49,16 +49,14 @@ export function refactorBinarySearch(arr, element){
   // is less than or equal to the end so it will
   // return -1 if start <= end
   while (element !== arr[mid]){
-    if(element < arr[mid]){
-      end = mid -1;
-    } else {
-      start = mid + 1;
-    }
+    // if less, make the new end mid -1;
+    if(element < arr[mid]) end = mid -1;
+    // else make start mid + 1;
+    else start = mid + 1;
+    // after that set the new middle
     mid = Math.floor(start + end / 2)
-    // if the mid == to the element return the elemenet
-    if (element === arr[mid]){
-      return element
-    } return -1; // if it isn't after the while loop return -1
+    // if the mid == to the element return the elemenet or -1.
+    element === arr[mid] ? mid : -1;
   }
 }
 
